@@ -7,7 +7,6 @@ Machine learning Linear regresion algorithm using gradient descendent
 '''
 
 #we import libryries
-from email.policy import default
 import pandas as pd #we use pandas to manage dataframes
 import matplotlib.pyplot as plt # and matplotlib to show predictions
 
@@ -83,6 +82,7 @@ def Prediction(m,c,x_input):
 
 m, c = GradientDesc(m,c,L,epochs,X,Y) # we call the function 
 
+print(f"m: {m} and {c} ")
 y_pred = m*X + c # calculate the predicted y
 
 
